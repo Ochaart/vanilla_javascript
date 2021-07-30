@@ -20,13 +20,13 @@ const getLowHighTemp = (forecast) => {
   return { highTemp: `${highTemp}${deg}${forecast[0].temperatureUnit}`, lowTemp: `${lowTemp}${deg}${forecast[1].temperatureUnit}` };
 }
 
-const displayTempDetails = (temperatures, currentHours) => {
+const displayTempDetails = (temperatures, hours) => {
   const { highTemp, lowTemp } = temperatures;
-  const currentTime = new Date();
-  const currentForecast = currentHours.filter((period) => {
+  const today = new Date();
+  const currentForecast = hours.filter((period) => {
     let currentPeriodStartTime = new Date(period.startTime);
     let currentPeriodEndTime = new Date(period.endTime);
-    return currentTime.getDate() === currentPeriodStartTime.getDate() && currentPeriodStartTime <= currentTime && currentTime <= currentPeriodEndTime
+    return today.getDate() === currentPeriodStartTime.getDate() && currentPeriodStartTime <= today && today <= currentPeriodEndTime
   });
   weatherImage.setAttribute("src", currentForecast[0].icon);
   weatherImage.setAttribute("alt", currentForecast[0].shortForecast);

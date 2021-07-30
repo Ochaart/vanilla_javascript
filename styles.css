@@ -8,7 +8,7 @@ body {
 }
 
 body form {
-  width: 220px;
+  width: 300px;
   min-height: 60vh;
   display: flex;
   position: relative;
@@ -98,7 +98,7 @@ body form {
   color: white;
   margin-top: 20px;
   align-self: start;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .date {
