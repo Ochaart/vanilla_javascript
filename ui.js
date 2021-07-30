@@ -42,7 +42,7 @@ const displayLocDate = (zone) => {
   locDate.style.display = "flex";
   loc.textContent = `${zone.properties.name}, ${zone.properties.state}`
   const currentDate = new Date();
-  const day = days[currentDate.getDay()];
+  const day = days[currentDate.getDay() - 1];
   const today = currentDate.getDate();
   const year = currentDate.getFullYear();
   const month = currentDate.toLocaleDateString('en-US', {month: 'short'});
