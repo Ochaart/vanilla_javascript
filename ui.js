@@ -38,11 +38,11 @@ const displayTempDetails = (temperatures, hours) => {
 }
 
 const displayLocDate = (zone) => {
-  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   locDate.style.display = "flex";
   loc.textContent = `${zone.properties.name}, ${zone.properties.state}`
   const currentDate = new Date();
-  const day = days[currentDate.getDay() - 1];
+  const day = days[currentDate.getDay()];
   const today = currentDate.getDate();
   const year = currentDate.getFullYear();
   const month = currentDate.toLocaleDateString('en-US', {month: 'short'});
