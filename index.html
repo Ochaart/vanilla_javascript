@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <form>
+        <input class="zip_code" type=text placeholder="Ex. 94103"></input>
+        <div class="loc_date">
+          <div class="location"></div>
+          <div class="date"></div>
+        </div>
+        <div class="image_container">
+          <img class="weather_image" src="./public/assests/cloud.png" alt="image of cloud">
+        </div>
+        <div class="instructions">
+          <p>ENTER A <br/> ZIP CODE</p>
+        </div>
+        <div class="temp_details">
+          <div class="current_temp"></div>
+          <div class="weather"></div>
+          <div class="low_high"></div>
+        </div>
+        <button class="submit">ENTER</button>
+        <button class="change_mode">
+          <div class="current_mode">
+            <img class="mode_image" src="./public/assests/moon.png" alt="night mode">
+          </div>
+        </button>
+      </form>
+    </div>
+    <script src="./ui.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+body form {
+  width: 220px;
+  min-height: 60vh;
+  display: flex;
+  position: relative;
+  border: 1px solid black;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-between;
+  background: gray;
+  border-radius: 20px;
+  padding: 15px 0 30px 0;
+}
+
+.image_container {
+  height: 100px;
+  width: 100px;
+}
+
+.weather_image {
+  height: 100%;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.submit {
+  width: 35%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-color: white;
+  padding: 2.5px 5px;
+  text-align: center;
+  font-size: .8rem;
+}
+
+.zip_code {
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  outline: none;
+}
+
+.instructions {
+  color: white;
+  font-size: 2.2rem;
+}
+
+.change_mode {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+  height: 20px;
+  width: 30px;
+  background: lightblue;
+  border-radius: 30px;
+}
+
+.current_mode {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: white;
+  top: -25%;
+  left: -30%;
+  transition: all .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mode_image {
+  height: 80%;
+  width: 80%;
+}
+
+.move_right {
+  transform: translateX(70%);
+  transition: all .2s ease-in-out;
+}
+
+.loc_date {
+  display: none;
+  flex-direction: column;
+  color: white;
+  margin-top: 20px;
+  align-self: start;
+  margin-left: 20px;
+}
+
+.date {
+  font-size: .8rem;
+}
+
+.location {
+  font-size: 1.2rem;
+}
+
+.temp_details {
+  color: white;
+  text-shadow: 1px black;
+  display: none;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.current_temp {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.weather {
+  margin-bottom: 10px;
+}
+
+.low_high {
+  margin-bottom: 10px;
+}
+
+.dark_mode {
+  background: gray;
+}
+
+.light_mode {
+  background: lightblue;
+}
